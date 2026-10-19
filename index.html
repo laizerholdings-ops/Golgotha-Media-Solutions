@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Signage Solutions in Kempton Park | Golgotha Media Solutions</title>
+    <meta name="description" content="Golgotha Media Solutions offers digital signage supply, maintenance, rental, content creation, content management and digital signage management in Kempton Park, South Africa.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Digital Signage Solutions in Kempton Park | Golgotha Media Solutions">
+    <meta property="og:description" content="Transform your space with intelligent digital signage, supply, rental, content creation, and management services in South Africa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.golgotha.co.za">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#030712',
+                            800: '#0a1128',
+                            700: '#101d3b',
+                            600: '#192e5b',
+                        },
+                        electric: {
+                            500: '#0066ff',
+                            400: '#3385ff',
+                            600: '#0052cc',
+                        },
+                        emerald: {
+                            500: '#10b981',
+                            400: '#34d399',
+                        },
+                        lime: {
+                            400: '#a3e635',
+                            500: '#84cc16',
+                        },
+                        cyan: {
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                        },
+                        whatsapp: {
+                            500: '#25D366',
+                            600: '#20ba5a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    },
+                    keyframes: {
+                        floatSlow: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-12px)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+                            '50%': { opacity: '0.8', transform: 'scale(1.05)' },
+                        }
+                    },
+                    animation: {
+                        'float-slow': 'floatSlow 6s ease-in-out infinite',
+                        'pulse-glow': 'pulseGlow 4s ease-in-out infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts & Lucide Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Styling & Animations -->
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .dark body {
+            background-color: #030712;
+            color: #f3f4f6;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(0, 102, 255, 0.25);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            transition: background 0.3s ease, border 0.3s ease;
+        }
+        .dark .glass-card {
+            background: rgba(10, 17, 40, 0.82);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #0052cc 0%, #0066ff 50%, #10b981 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .dark .gradient-text {
+            background: linear-gradient(135deg, #ffffff 0%, #3385ff 50%, #34d399 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 30%, rgba(0, 102, 255, 0.12) 0%, rgba(16, 185, 129, 0.08) 40%, transparent 70%);
+        }
+        .dark .hero-gradient {
+            background: radial-gradient(circle at 50% 30%, rgba(0, 102, 255, 0.2) 0%, rgba(16, 185, 129, 0.1) 40%, transparent 70%);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #030712;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 5px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #192e5b;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-electric-500 selection:text-white relative">
+
+    <!-- Fixed Full-Screen Background Video for the Entire Website -->
+    <div class="fixed inset-0 w-full h-full overflow-hidden pointer-events-none z-[-1]">
+        <video autoplay muted loop playsinline class="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover">
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Adaptive overlay for Day/Night readability across the entire site -->
+        <div class="absolute inset-0 bg-slate-100/75 dark:bg-slate-950/80 backdrop-blur-[2px] transition-colors duration-500"></div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 dark:bg-navy-900/90 backdrop-blur-md border-b border-gray-200 dark:border-white/10 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Enlarged Official Logo -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <img src="logo.png" alt="Golgotha Media Solutions Logo" class="h-14 sm:h-16 w-auto object-contain group-hover:scale-105 transition-transform">
+                </a>
+
+                <!-- Desktop Nav Links: Home, Services, About Us, Contacts -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#home" class="text-sm font-bold text-gray-900 dark:text-gray-100 hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">Home</a>
+                    <a href="#services" class="text-sm font-bold text-gray-900 dark:text-gray-100 hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">Services</a>
+                    <a href="#about" class="text-sm font-bold text-gray-900 dark:text-gray-100 hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">About Us</a>
+                    <a href="#contact" class="text-sm font-bold text-gray-900 dark:text-gray-100 hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">Contacts</a>
+                </nav>
+
+                <!-- CTA Button & Theme Toggle -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <!-- Day/Night Toggle Button -->
+                    <button id="theme-toggle" onclick="toggleTheme()" class="p-2.5 rounded-xl bg-gray-100 dark:bg-navy-800 text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-navy-700 transition-colors shadow-sm flex items-center justify-center border border-gray-200 dark:border-white/10" aria-label="Toggle Day/Night Mode">
+                        <i id="theme-icon" data-lucide="sun" class="w-5 h-5 text-amber-500"></i>
+                    </button>
+
+                    <a href="#contact" class="px-5 py-2.5 rounded-xl font-bold text-sm bg-gradient-to-r from-electric-500 to-cyan-500 text-white shadow-lg shadow-electric-500/25 hover:shadow-electric-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2">
+                        <span>Get a Quote</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu & Toggle Button -->
+                <div class="flex items-center gap-2 lg:hidden">
+                    <button onclick="toggleTheme()" class="p-2.5 rounded-xl bg-gray-100 dark:bg-navy-800 text-gray-900 dark:text-gray-100 border border-gray-200 dark:border-white/10" aria-label="Toggle Theme">
+                        <i class="theme-icon-mob w-5 h-5 text-amber-500" data-lucide="sun"></i>
+                    </button>
+                    <button id="mobile-menu-btn" class="p-2 rounded-lg text-gray-900 dark:text-gray-100 hover:text-electric-500 transition-colors" aria-label="Toggle Menu">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white/95 dark:bg-navy-800/95 border-b border-gray-200 dark:border-white/10 px-6 py-6 space-y-4 backdrop-blur-xl shadow-xl">
+            <a href="#home" class="mobile-link block text-base font-bold text-gray-900 dark:text-gray-100 hover:text-electric-600 dark:hover:text-cyan-400 py-1">Home</a>
+            <a href="#services" class="mobile-link block text-base font-bold text-gray-900 dark:text-gray-100 hover:text-electric-600 dark:hover:text-cyan-400 py-1">Services</a>
+            <a href="#about" class="mobile-link block text-base font-bold text-gray-900 dark:text-gray-100 hover:text-electric-600 dark:hover:text-cyan-400 py-1">About Us</a>
+            <a href="#contact" class="mobile-link block text-base font-bold text-gray-900 dark:text-gray-100 hover:text-electric-600 dark:hover:text-cyan-400 py-1">Contacts</a>
+            <div class="pt-2">
+                <a href="#contact" class="mobile-link w-full text-center block px-5 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-electric-500 to-cyan-500 text-white shadow-lg">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-28 pb-20 overflow-hidden hero-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 dark:bg-white/5 border border-gray-300 dark:border-white/10 text-xs font-bold text-emerald-700 dark:text-emerald-400 tracking-wide uppercase shadow-sm">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                        Kempton Park’s Premier Digital Signage Partner
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-gray-900 dark:text-white drop-shadow-sm">
+                        Transform Your Space with <span class="gradient-text">Intelligent Digital Signage.</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-gray-800 dark:text-gray-200 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-semibold">
+                        From digital display supply and installation support to content creation, rental and ongoing management, Golgotha Media Solutions delivers digital signage solutions designed to help businesses communicate, engage and stand out.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-base bg-gradient-to-r from-electric-500 to-cyan-500 text-white shadow-xl shadow-electric-500/30 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-3">
+                            <i data-lucide="sparkles" class="w-5 h-5"></i>
+                            <span>Get a Free Consultation</span>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-base bg-white/80 dark:bg-white/5 border border-gray-300 dark:border-white/15 text-gray-900 dark:text-white hover:bg-white dark:hover:bg-white/10 active:scale-95 transition-all flex items-center justify-center gap-3 shadow-sm">
+                            <span>Explore Our Solutions</span>
+                            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Metrics -->
+                    <div class="grid grid-cols-3 gap-6 pt-8 border-t border-gray-300 dark:border-white/10 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white">100%</p>
+                            <p class="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300 mt-1">Tailored Solutions</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-electric-600 dark:text-cyan-400">24/7</p>
+                            <p class="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300 mt-1">Support & Maint.</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-emerald-600 dark:text-emerald-400">Pro</p>
+                            <p class="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300 mt-1">Content Creation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none animate-float-slow">
+                        <div class="glass-card rounded-3xl p-4 shadow-2xl glow-effect relative overflow-hidden group">
+                            <div class="relative rounded-2xl overflow-hidden bg-gray-900 dark:bg-navy-900 border border-gray-200 dark:border-white/10 aspect-[4/3]">
+                                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000&auto=format&fit=crop" alt="Modern Digital Signage Display in Corporate Office" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x450/0a1128/3385ff?text=Digital+Signage+Display'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 dark:from-navy-900/90 via-transparent to-transparent flex items-end p-6">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></div>
+                                        <span class="text-xs font-bold uppercase tracking-wider text-white">Active LED Video Wall Feed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative overflow-hidden bg-white/60 dark:bg-navy-900/60 backdrop-blur-md border-t border-gray-200 dark:border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-electric-500/10 border border-electric-500/20 text-xs font-extrabold text-electric-600 dark:text-cyan-400 uppercase tracking-wider shadow-sm">
+                    Comprehensive Capabilities
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                    Our Core Services
+                </h2>
+                <p class="text-gray-800 dark:text-gray-200 text-base sm:text-lg font-semibold">
+                    Discover our range of professional digital signage solutions designed to elevate your business communication and audience engagement.
+                </p>
+            </div>
+
+            <!-- 6 Interactive Service Cards -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card rounded-3xl p-8 border border-gray-200 dark:border-white/10 hover:border-electric-500/50 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-electric-500 to-cyan-500 flex items-center justify-center text-white shadow-lg mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="monitor" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors">Digital Signage Supply</h3>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed mb-6 font-semibold">
+                            Provide digital signage display solutions suited to business environments, retail spaces, corporate offices, commercial properties and promotional applications.
+                        </p>
+                    </div>
+                    <a href="#contact" onclick="selectService('Digital Signage Supply')" class="inline-flex items-center gap-2 text-sm font-extrabold text-electric-600 dark:text-cyan-400 hover:text-electric-700 dark:hover:text-cyan-300 transition-colors">
+                        <span>Request a Quote</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card rounded-3xl p-8 border border-gray-200 dark:border-white/10 hover:border-emerald-500/50 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-500 to-lime-500 flex items-center justify-center text-white dark:text-navy-900 shadow-lg mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="wrench" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">Digital Signage Maintenance</h3>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed mb-6 font-semibold">
+                            Help businesses maintain the performance, reliability and presentation quality of their digital signage systems through maintenance and technical support.
+                        </p>
+                    </div>
+                    <a href="#contact" onclick="selectService('Digital Signage Maintenance')" class="inline-flex items-center gap-2 text-sm font-extrabold text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors">
+                        <span>Request a Quote</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card rounded-3xl p-8 border border-gray-200 dark:border-white/10 hover:border-electric-500/50 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-electric-600 to-electric-400 flex items-center justify-center text-white shadow-lg mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="calendar-days" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors">Digital Signage Rental</h3>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed mb-6 font-semibold">
+                            Offer digital signage rental solutions for events, exhibitions, promotions, conferences, launches and temporary display requirements.
+                        </p>
+                    </div>
+                    <a href="#contact" onclick="selectService('Digital Signage Rental')" class="inline-flex items-center gap-2 text-sm font-extrabold text-electric-600 dark:text-cyan-400 hover:text-electric-700 dark:hover:text-cyan-300 transition-colors">
+                        <span>Request a Quote</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card rounded-3xl p-8 border border-gray-200 dark:border-white/10 hover:border-emerald-500/50 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500 to-emerald-400 flex items-center justify-center text-white dark:text-navy-900 shadow-lg mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="palette" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">Digital Content Creation</h3>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed mb-6 font-semibold">
+                            Create visually engaging digital content, advertisements, promotional graphics and screen-ready media tailored to business communication objectives.
+                        </p>
+                    </div>
+                    <a href="#contact" onclick="selectService('Digital Content Creation')" class="inline-flex items-center gap-2 text-sm font-extrabold text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors">
+                        <span>Request a Quote</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card rounded-3xl p-8 border border-gray-200 dark:border-white/10 hover:border-electric-500/50 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-electric-500 to-emerald-500 flex items-center justify-center text-white shadow-lg mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="layers" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors">Content Management</h3>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed mb-6 font-semibold">
+                            Help businesses organise, update and manage the content displayed across their digital signage screens efficiently and centrally.
+                        </p>
+                    </div>
+                    <a href="#contact" onclick="selectService('Content Management')" class="inline-flex items-center gap-2 text-sm font-extrabold text-electric-600 dark:text-cyan-400 hover:text-electric-700 dark:hover:text-cyan-300 transition-colors">
+                        <span>Request a Quote</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card rounded-3xl p-8 border border-gray-200 dark:border-white/10 hover:border-emerald-500/50 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-500 to-cyan-500 flex items-center justify-center text-white dark:text-navy-900 shadow-lg mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="settings-2" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">Digital Signage Management</h3>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed mb-6 font-semibold">
+                            Provide support for the management and coordination of digital signage systems, helping businesses maintain consistent messaging across their display environments.
+                        </p>
+                    </div>
+                    <a href="#contact" onclick="selectService('Digital Signage Management')" class="inline-flex items-center gap-2 text-sm font-extrabold text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors">
+                        <span>Request a Quote</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white/80 dark:bg-navy-900/80 backdrop-blur-md relative overflow-hidden border-t border-gray-200 dark:border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-200 dark:border-white/10 group">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1000&auto=format&fit=crop" alt="Commercial digital display installation" class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/800x600/0a1128/0066ff?text=Commercial+Display+Installation'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 dark:from-navy-900/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="px-3.5 py-1 rounded-full bg-electric-500/30 text-white text-xs font-bold backdrop-blur-md border border-electric-400/30">Kempton Park HQ</span>
+                            <h3 class="text-xl font-bold text-white mt-2">Professional Digital Signage Infrastructure</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-extrabold text-emerald-700 dark:text-emerald-400 uppercase tracking-wider">
+                        Company Introduction
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                        Your Partner in Digital Display Solutions
+                    </h2>
+                    
+                    <p class="text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed font-semibold">
+                        Golgotha Media Solutions provides digital signage solutions that help businesses present information, promote products, communicate messages and create engaging visual experiences. Based in Kempton Park, we support businesses looking for reliable digital signage supply, maintenance, rental, content creation and display management services.
+                    </p>
+
+                    <div class="grid sm:grid-cols-3 gap-4 pt-4">
+                        <div class="glass-card p-5 rounded-2xl border border-gray-200 dark:border-white/10">
+                            <div class="w-10 h-10 rounded-xl bg-electric-500/20 text-electric-600 dark:text-electric-400 flex items-center justify-center mb-3">
+                                <i data-lucide="cpu" class="w-5 h-5"></i>
+                            </div>
+                            <h4 class="text-sm font-bold text-gray-900 dark:text-white">Innovative Display Technology</h4>
+                        </div>
+                        <div class="glass-card p-5 rounded-2xl border border-gray-200 dark:border-white/10">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-3">
+                                <i data-lucide="wrench" class="w-5 h-5"></i>
+                            </div>
+                            <h4 class="text-sm font-bold text-gray-900 dark:text-white">Reliable Support & Maintenance</h4>
+                        </div>
+                        <div class="glass-card p-5 rounded-2xl border border-gray-200 dark:border-white/10">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-600 dark:text-cyan-400 flex items-center justify-center mb-3">
+                                <i data-lucide="layout-template" class="w-5 h-5"></i>
+                            </div>
+                            <h4 class="text-sm font-bold text-gray-900 dark:text-white">Engaging Digital Content</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="py-24 bg-white/60 dark:bg-navy-900/60 backdrop-blur-md border-y border-gray-200 dark:border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-extrabold text-emerald-700 dark:text-emerald-400 uppercase tracking-wider">
+                    Sector Applications
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                    Industries We Serve
+                </h2>
+                <p class="text-gray-800 dark:text-gray-200 text-base sm:text-lg font-semibold">
+                    Tailored digital display applications empowering diverse commercial and public sectors across South Africa.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Retail -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-gray-200 dark:border-white/10 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1555529771-835f59fc5efe?q=80&w=800&auto=format&fit=crop" alt="Retail Stores" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors">Retail Stores & Shopping Centres</h3>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed font-semibold">Drive sales and promotional campaigns with vibrant digital displays that capture shopper attention and showcase promotional offers.</p>
+                    </div>
+                </div>
+
+                <!-- Corporate Offices -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-gray-200 dark:border-white/10 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/38816593/pexels-photo-38816593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Corporate Offices blurred modern corridor by Jakub Zerdzicki" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/0a1128/0066ff?text=Corporate+Offices'">
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors">Corporate Offices</h3>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed font-semibold">Enhance internal communications, welcome visitors with interactive reception screens, and display key company metrics.</p>
+                    </div>
+                </div>
+
+                <!-- Hospitality -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-gray-200 dark:border-white/10 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop" alt="Hospitality" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors">Hospitality & Restaurants</h3>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed font-semibold">Upgrade guest experiences with dynamic digital menu boards, promotional announcements, and wayfinding signage.</p>
+                    </div>
+                </div>
+
+                <!-- Events -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-gray-200 dark:border-white/10 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop" alt="Events" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors">Events & Exhibitions</h3>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed font-semibold">Make a lasting impression at conferences, product launches, and trade shows with high-impact temporary rental screens.</p>
+                    </div>
+                </div>
+
+                <!-- Commercial Properties -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-gray-200 dark:border-white/10 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/34398495/pexels-photo-34398495.jpeg" alt="Commercial Properties aerial view of Belo Horizonte cityscape by Malcoln Oliveira" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/0a1128/06b6d4?text=Commercial+Properties'">
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors">Commercial Properties</h3>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed font-semibold">Streamline directory information, building announcements, and security notices across multi-tenant commercial office buildings.</p>
+                    </div>
+                </div>
+
+                <!-- Education & Public Spaces -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-gray-200 dark:border-white/10 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/15465922/pexels-photo-15465922.jpeg" alt="Education and Public Information Spaces sunny interior of library by Zhengdong Hu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/0a1128/84cc16?text=Education+Public+Spaces'">
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors">Education & Public Information Spaces</h3>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed font-semibold">Communicate campus notices, timetables, and emergency broadcasts efficiently across academic and public civic facilities.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- South African Client Testimonials -->
+    <section class="py-24 bg-white/80 dark:bg-navy-900/80 backdrop-blur-md relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-extrabold text-emerald-700 dark:text-emerald-400 uppercase tracking-wider">
+                    South African Testimonials
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                    Trusted by Businesses Across Mzansi
+                </h2>
+                <p class="text-gray-800 dark:text-gray-200 text-base sm:text-lg font-semibold">
+                    Hear what our valued South African partners have to say about our digital display solutions and dedicated support.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="glass-card p-8 rounded-3xl border border-gray-200 dark:border-white/10 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 mb-4">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                        </div>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed italic mb-6 font-semibold">
+                            "Golgotha Media Solutions supplied our Sandton retail storefront with incredible LED video screens. Their ongoing maintenance and prompt support in Gauteng has been phenomenal."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-200 dark:border-white/10">
+                        <div class="w-10 h-10 rounded-full bg-electric-500/20 text-electric-600 dark:text-cyan-400 flex items-center justify-center font-bold">SN</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-900 dark:text-white">Sipho Ndlovu</h4>
+                            <p class="text-xs font-bold text-gray-700 dark:text-gray-300">Retail Operations Manager, Johannesburg</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl border border-gray-200 dark:border-white/10 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 mb-4">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                        </div>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed italic mb-6 font-semibold">
+                            "We rented high-definition digital display stands for our product exhibition in Kempton Park. The setup was seamless, professional, and drew massive foot traffic."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-200 dark:border-white/10">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">JV</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-900 dark:text-white">Jan van der Merwe</h4>
+                            <p class="text-xs font-bold text-gray-700 dark:text-gray-300">Exhibition Coordinator, Pretoria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl border border-gray-200 dark:border-white/10 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 mb-4">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                        </div>
+                        <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed italic mb-6 font-semibold">
+                            "Their content creation and centralised management service transformed how we display menu boards and promotional notices across our restaurant group."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-200 dark:border-white/10">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-600 dark:text-cyan-400 flex items-center justify-center font-bold">PM</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-900 dark:text-white">Priya Moodley</h4>
+                            <p class="text-xs font-bold text-gray-700 dark:text-gray-300">Hospitality Director, Durban</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-white/60 dark:bg-navy-900/60 backdrop-blur-md border-t border-gray-200 dark:border-white/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-extrabold text-cyan-700 dark:text-cyan-400 uppercase tracking-wider">
+                    Got Questions?
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                    Frequently Asked Questions (FAQ)
+                </h2>
+                <p class="text-gray-800 dark:text-gray-200 text-base sm:text-lg font-semibold">
+                    Find quick answers regarding our digital signage supply, rental, maintenance, and content services.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                
+                <div class="glass-card rounded-2xl border border-gray-200 dark:border-white/10 overflow-hidden transition-all">
+                    <button onclick="toggleFaq(this)" class="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none">
+                        <span class="text-lg font-bold text-gray-900 dark:text-white">Where is Golgotha Media Solutions located?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-electric-600 dark:text-cyan-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-800 dark:text-gray-200 text-sm leading-relaxed font-semibold">
+                        We are proudly based in Kempton Park, South Africa, and provide professional digital signage supply, rental, and maintenance services to clients throughout Gauteng and nationwide.
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl border border-gray-200 dark:border-white/10 overflow-hidden transition-all">
+                    <button onclick="toggleFaq(this)" class="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none">
+                        <span class="text-lg font-bold text-gray-900 dark:text-white">Do you offer digital signage rentals for short-term events?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-electric-600 dark:text-cyan-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-800 dark:text-gray-200 text-sm leading-relaxed font-semibold">
+                        Yes! We offer flexible short-term digital signage rental solutions tailored for exhibitions, corporate conferences, product launches, trade shows, and promotional activations.
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl border border-gray-200 dark:border-white/10 overflow-hidden transition-all">
+                    <button onclick="toggleFaq(this)" class="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none">
+                        <span class="text-lg font-bold text-gray-900 dark:text-white">Can Golgotha Media Solutions create custom content for my screens?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-electric-600 dark:text-cyan-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-800 dark:text-gray-200 text-sm leading-relaxed font-semibold">
+                        Absolutely. Our digital content creation service specializes in designing visually engaging advertisements, promotional graphics, and screen-ready media tailored precisely to your business objectives.
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl border border-gray-200 dark:border-white/10 overflow-hidden transition-all">
+                    <button onclick="toggleFaq(this)" class="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none">
+                        <span class="text-lg font-bold text-gray-900 dark:text-white">What maintenance and technical support do you provide?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-electric-600 dark:text-cyan-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-800 dark:text-gray-200 text-sm leading-relaxed font-semibold">
+                        We provide comprehensive maintenance and technical support to ensure your digital signage displays remain reliable, pristine, and operating at peak performance presentation quality.
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl border border-gray-200 dark:border-white/10 overflow-hidden transition-all">
+                    <button onclick="toggleFaq(this)" class="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none">
+                        <span class="text-lg font-bold text-gray-900 dark:text-white">How do I request a quote for my business?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-electric-600 dark:text-cyan-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-800 dark:text-gray-200 text-sm leading-relaxed font-semibold">
+                        You can easily fill out our online enquiry form on this website, email us directly at joseph@golgotha.co.za, or reach out to us via WhatsApp for prompt assistance.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Enquiry Form Section -->
+    <section id="contact" class="py-24 relative overflow-hidden bg-white/80 dark:bg-navy-900/80 backdrop-blur-md border-t border-gray-200 dark:border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-electric-500/10 border border-electric-500/20 text-xs font-extrabold text-electric-600 dark:text-cyan-400 uppercase tracking-wider">
+                        Get In Touch
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                        Let’s Discuss Your Digital Signage Project
+                    </h2>
+                    <p class="text-gray-800 dark:text-gray-200 text-base leading-relaxed font-semibold">
+                        Complete the enquiry form or reach out directly via email or WhatsApp. Our team in Kempton Park is ready to provide expert guidance and tailored solutions.
+                    </p>
+
+                    <div class="space-y-6 pt-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-electric-500/20 text-electric-600 dark:text-cyan-400 flex items-center justify-center shrink-0">
+                                <i data-lucide="building-2" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wider">Company</h3>
+                                <p class="text-lg font-bold text-gray-900 dark:text-white mt-1">Golgotha Media Solutions (Pty) Ltd</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wider">Location</h3>
+                                <p class="text-lg font-bold text-gray-900 dark:text-white mt-1">Kempton Park, South Africa</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-cyan-500/20 text-cyan-600 dark:text-cyan-400 flex items-center justify-center shrink-0">
+                                <i data-lucide="mail" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wider">Email Us</h3>
+                                <a href="mailto:joseph@golgotha.co.za" class="text-lg font-bold text-electric-600 dark:text-cyan-400 hover:underline mt-1 block">joseph@golgotha.co.za</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl glass-card border border-gray-200 dark:border-white/10">
+                        <p class="text-xs text-gray-700 dark:text-gray-300 leading-relaxed font-semibold">
+                            <strong class="text-gray-900 dark:text-white">POPIA Compliance Notice:</strong> By submitting this form, you consent to Golgotha Media Solutions processing your contact details solely for responding to your digital signage enquiry in accordance with South African POPIA regulations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 sm:p-10 rounded-3xl border border-gray-200 dark:border-white/10 relative shadow-2xl">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Service Enquiry Form</h3>
+                        
+                        <div id="form-success" class="hidden mb-6 p-4 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-900 dark:text-emerald-200 text-sm font-bold flex items-center gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 shrink-0 text-emerald-600 dark:text-emerald-400"></i>
+                            <span>Thank you! Your enquiry has been successfully submitted. Our team will contact you shortly.</span>
+                        </div>
+
+                        <form id="enquiry-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-800 dark:text-gray-200 uppercase tracking-wider mb-2">Full Name *</label>
+                                    <input type="text" id="fullName" required class="w-full bg-white dark:bg-navy-900/90 border border-gray-300 dark:border-white/20 rounded-xl px-4 py-3 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-electric-500 dark:focus:border-cyan-400 transition-colors shadow-sm font-semibold" placeholder="John Smith">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-800 dark:text-gray-200 uppercase tracking-wider mb-2">Company Name *</label>
+                                    <input type="text" id="companyName" required class="w-full bg-white dark:bg-navy-900/90 border border-gray-300 dark:border-white/20 rounded-xl px-4 py-3 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-electric-500 dark:focus:border-cyan-400 transition-colors shadow-sm font-semibold" placeholder="Your Business (Pty) Ltd">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-800 dark:text-gray-200 uppercase tracking-wider mb-2">Email Address *</label>
+                                    <input type="email" id="email" required class="w-full bg-white dark:bg-navy-900/90 border border-gray-300 dark:border-white/20 rounded-xl px-4 py-3 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-electric-500 dark:focus:border-cyan-400 transition-colors shadow-sm font-semibold" placeholder="john@business.co.za">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-800 dark:text-gray-200 uppercase tracking-wider mb-2">Phone or WhatsApp Number *</label>
+                                    <input type="tel" id="phone" required class="w-full bg-white dark:bg-navy-900/90 border border-gray-300 dark:border-white/20 rounded-xl px-4 py-3 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-electric-500 dark:focus:border-cyan-400 transition-colors shadow-sm font-semibold" placeholder="+27 82 123 4567">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-800 dark:text-gray-200 uppercase tracking-wider mb-2">Service Required *</label>
+                                    <select id="serviceRequired" required class="w-full bg-white dark:bg-navy-900/90 border border-gray-300 dark:border-white/20 rounded-xl px-4 py-3 text-gray-900 dark:text-white focus:outline-none focus:border-electric-500 dark:focus:border-cyan-400 transition-colors shadow-sm font-semibold">
+                                        <option value="" disabled selected>Select a service...</option>
+                                        <option value="Digital Signage Supply">Digital Signage Supply</option>
+                                        <option value="Digital Signage Maintenance">Digital Signage Maintenance</option>
+                                        <option value="Digital Signage Rental">Digital Signage Rental</option>
+                                        <option value="Digital Content Creation">Digital Content Creation</option>
+                                        <option value="Content Management">Content Management</option>
+                                        <option value="Digital Signage Management">Digital Signage Management</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-800 dark:text-gray-200 uppercase tracking-wider mb-2">Project Location *</label>
+                                    <input type="text" id="projectLocation" required class="w-full bg-white dark:bg-navy-900/90 border border-gray-300 dark:border-white/20 rounded-xl px-4 py-3 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-electric-500 dark:focus:border-cyan-400 transition-colors shadow-sm font-semibold" placeholder="e.g. Kempton Park, Johannesburg">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-gray-800 dark:text-gray-200 uppercase tracking-wider mb-2">Estimated Budget (Optional)</label>
+                                <input type="text" id="budget" class="w-full bg-white dark:bg-navy-900/90 border border-gray-300 dark:border-white/20 rounded-xl px-4 py-3 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-electric-500 dark:focus:border-cyan-400 transition-colors shadow-sm font-semibold" placeholder="e.g. R50,000 - R100,000">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-gray-800 dark:text-gray-200 uppercase tracking-wider mb-2">Project Description *</label>
+                                <textarea id="projectDescription" required rows="4" class="w-full bg-white dark:bg-navy-900/90 border border-gray-300 dark:border-white/20 rounded-xl px-4 py-3 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-electric-500 dark:focus:border-cyan-400 transition-colors shadow-sm font-semibold resize-none" placeholder="Tell us about your display requirements, number of screens, or timeline..."></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl font-bold text-base bg-gradient-to-r from-electric-500 to-cyan-500 text-white shadow-xl shadow-electric-500/30 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-3">
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                                <span>Submit Enquiry</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white/90 dark:bg-navy-900/90 backdrop-blur-md border-t border-gray-200 dark:border-white/10 pt-16 pb-12 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16 border-b border-gray-200 dark:border-white/10">
+                
+                <div class="lg:col-span-2 space-y-6">
+                    <a href="#home" class="flex items-center gap-3 group">
+                        <img src="logo.png" alt="Golgotha Media Solutions Logo" class="h-14 w-auto object-contain">
+                    </a>
+                    
+                    <p class="text-gray-800 dark:text-gray-200 text-sm leading-relaxed max-w-sm font-semibold">
+                        Golgotha Media Solutions — Digital signage solutions for modern business communication. Based in Kempton Park, South Africa.
+                    </p>
+
+                    <div class="space-y-2 text-sm font-bold text-gray-900 dark:text-gray-100">
+                        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-electric-600 dark:text-cyan-400"></i> Kempton Park, South Africa</p>
+                        <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i> <a href="mailto:joseph@golgotha.co.za" class="hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">joseph@golgotha.co.za</a></p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-sm font-extrabold uppercase tracking-wider text-gray-900 dark:text-white">Navigation</h4>
+                    <ul class="space-y-2.5 text-sm font-bold text-gray-800 dark:text-gray-200">
+                        <li><a href="#home" class="hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">Services</a></li>
+                        <li><a href="#about" class="hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="#contact" class="hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4 lg:col-span-2">
+                    <h4 class="text-sm font-extrabold uppercase tracking-wider text-gray-900 dark:text-white">Our Services</h4>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm font-bold text-gray-800 dark:text-gray-200">
+                        <li><a href="#services" class="hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">Digital Signage Supply</a></li>
+                        <li><a href="#services" class="hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">Digital Signage Maintenance</a></li>
+                        <li><a href="#services" class="hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">Digital Signage Rental</a></li>
+                        <li><a href="#services" class="hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">Digital Content Creation</a></li>
+                        <li><a href="#services" class="hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">Content Management</a></li>
+                        <li><a href="#services" class="hover:text-electric-600 dark:hover:text-cyan-400 transition-colors">Digital Signage Management</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-bold text-gray-700 dark:text-gray-300">
+                <p>&copy; 2026 Golgotha Media Solutions (Pty) Ltd. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <span>POPIA Compliant</span>
+                    <span>Kempton Park, South Africa</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button on the bottom right -->
+    <a href="https://wa.me/27821234567?text=Hi%20Golgotha%20Media%20Solutions,%20I%20would%20like%20to%20enquire%20about%20digital%20signage%20solutions." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-whatsapp-500 hover:bg-whatsapp-600 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group">
+        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        <span class="absolute right-full mr-3 bg-gray-900 dark:bg-navy-800 text-white text-xs font-bold px-3.5 py-2 rounded-xl shadow-2xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-white/10">Chat on WhatsApp</span>
+    </a>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Theme Toggle Logic (Defaulting to Light / Day Mode)
+        let isDarkMode = false; // default day
+
+        function applyTheme() {
+            const root = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            const themeIconsMob = document.querySelectorAll('.theme-icon-mob');
+
+            if (isDarkMode) {
+                root.classList.add('dark');
+                if (themeIcon) {
+                    themeIcon.setAttribute('data-lucide', 'moon');
+                    themeIcon.className = 'w-5 h-5 text-cyan-400';
+                }
+                themeIconsMob.forEach(icon => {
+                    icon.setAttribute('data-lucide', 'moon');
+                    icon.className = 'theme-icon-mob w-5 h-5 text-cyan-400';
+                });
+            } else {
+                root.classList.remove('dark');
+                if (themeIcon) {
+                    themeIcon.setAttribute('data-lucide', 'sun');
+                    themeIcon.className = 'w-5 h-5 text-amber-500';
+                }
+                themeIconsMob.forEach(icon => {
+                    icon.setAttribute('data-lucide', 'sun');
+                    icon.className = 'theme-icon-mob w-5 h-5 text-amber-500';
+                });
+            }
+            lucide.createIcons();
+        }
+
+        function toggleTheme() {
+            isDarkMode = !isDarkMode;
+            applyTheme();
+        }
+
+        // Initialize Day mode on load
+        applyTheme();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Pre-select service in form when clicking 'Request a Quote' from a service card
+        function selectService(serviceName) {
+            const selectEl = document.getElementById('serviceRequired');
+            if (selectEl) {
+                selectEl.value = serviceName;
+            }
+        }
+
+        // Toggle FAQ Accordion
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            document.querySelectorAll('.faq-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.add('hidden');
+                    item.previousElementSibling.querySelector('i').classList.remove('rotate-180');
+                }
+            });
+
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Handle Form Submission
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const formData = {
+                fullName: document.getElementById('fullName').value,
+                companyName: document.getElementById('companyName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                service: document.getElementById('serviceRequired').value,
+                location: document.getElementById('projectLocation').value,
+                budget: document.getElementById('budget').value,
+                description: document.getElementById('projectDescription').value
+            };
+
+            console.log("Enquiry Submitted:", formData);
+
+            const successBox = document.getElementById('form-success');
+            successBox.classList.remove('hidden');
+
+            document.getElementById('enquiry-form').reset();
+
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
+</html>
